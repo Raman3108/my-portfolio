@@ -1,0 +1,651 @@
+    @import 'utility.css';
+    * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+    }
+    
+    body {
+        font-family: sans-serif;
+    }
+    
+    html {
+        scroll-behavior: smooth;
+    }
+    
+    header {
+        background: #161616;
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 75% 87%, 0% 100%);
+    }
+    
+    .container {
+        max-width: 1152px;
+        padding: 0 15px;
+        margin: 0 auto;
+    }
+    
+    @media (min-width:576px) {
+        .container {
+            max-width: 540px;
+        }
+    }
+    
+    @media (min-width:768px) {
+        .container {
+            max-width: 710px;
+        }
+    }
+    
+    @media (min-width:992px) {
+        .container {
+            max-width: 960px;
+        }
+    }
+    
+    @media (min-width:1200px) {
+        .container {
+            max-width: 1152px;
+        }
+    }
+    
+    header nav .left a {
+        color: #ffffff;
+        text-decoration: none;
+        margin-right: 2rem;
+        text-transform: uppercase;
+        transition: all .3s ease;
+    }
+    
+    header nav .left a:hover {
+        color: turquoise;
+    }
+    
+    header nav .right a {
+        color: #ffffff;
+        text-decoration: none;
+        margin-right: 2rem;
+        text-transform: uppercase;
+        transition: all .3s ease;
+    }
+    
+    header nav .right a:hover {
+        color: turquoise;
+    }
+    
+    header nav {
+        padding: 2rem 0;
+    }
+    
+    header nav .branding {
+        margin-right: 3rem;
+    }
+    
+    .hero {
+        padding: 5rem 0;
+    }
+    
+    .hero img {
+        width: 100%;
+        height: 100%;
+        margin-top: -3rem;
+    }
+    
+    .hero .right {
+        color: #ffffff;
+        margin-left: 3rem;
+    }
+    
+    .hero .right h4 {
+        font-size: 1.6rem;
+        color: turquoise;
+        margin-bottom: 0.5rem;
+    }
+    
+    .hero .right h2 {
+        font-size: 4rem;
+        font-weight: 50;
+        line-height: 1;
+        margin-bottom: 2rem;
+    }
+    
+    .hero .right h2 span {
+        color: turquoise;
+    }
+    
+    .hero .right p {
+        line-height: 1.9;
+        margin-bottom: 2rem;
+    }
+    
+    .hero .right {
+        margin-top: -7rem;
+    }
+    
+    section {
+        padding: 6rem 0;
+    }
+    
+    section.about h1 {
+        margin-bottom: 1rem;
+        font-size: 1.6rem;
+        font-weight: 400;
+    }
+    
+    section.about h1 span {
+        color: turquoise;
+    }
+    
+    section.about h3 {
+        font-size: 1rem;
+        margin-bottom: 1rem;
+        font-weight: 400;
+    }
+    
+    section.about p {
+        font-family: sans-serif;
+        font-style: initial;
+        line-height: 1.9;
+        color: #444444;
+        margin-bottom: 1rem;
+    }
+    
+    section.about p span {
+        color: turquoise;
+    }
+    
+    section.about .social {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+    }
+    
+    section.about .social a:hover {
+        color: turquoise;
+    }
+    
+    .section-heading {
+        color: #070606;
+        text-align: center;
+        margin-bottom: 2rem;
+        line-height: 0.5;
+        font-size: 30px;
+        font-weight: 600;
+    }
+    
+    .section-heading span {
+        color: turquoise;
+    }
+    
+    .section-heading+p {
+        color: #898989;
+        font-family: sans-serif;
+        margin-bottom: 1rem;
+        text-align: center;
+        margin-bottom: 6rem;
+        font-size: 20px;
+        font-weight: 500;
+    }
+    
+    section.services {
+        background: #f5f1f1ef;
+    }
+    
+    div.card-wrapper {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-column-gap: 7rem;
+        grid-row-gap: 8rem;
+        margin-bottom: 4rem;
+    }
+    
+    div .card-wrapper .card {
+        background: #ffffff;
+        padding: 3rem 2rem;
+        position: relative;
+        transform: translateY(100px);
+        opacity: 1;
+        transition: 0.5s ease-in-out;
+    }
+    
+    div .card-wrapper .card:hover {
+        transform: translateY(0px);
+        opacity: 2;
+        background: #000;
+    }
+    
+    div .card-wrapper .card img {
+        position: absolute;
+        top: -3.5rem;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    
+    div .card-wrapper .card h2 {
+        color: turquoise;
+        margin-top: 1rem;
+        text-align: center;
+        font-weight: 400;
+    }
+    
+    div .card-wrapper .card p {
+        color: rgba(71, 187, 255, 0.925);
+        text-align: center;
+        font-weight: 400;
+        margin-top: 0.5rem;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    
+    section.freelancing {
+        background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(/images/camera.png);
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 77% 80%, 0% 100%);
+        text-align: center;
+        padding-top: 4rem;
+        padding-bottom: 10rem;
+    }
+    
+    section.freelancing h1 {
+        margin-top: 0.5rem;
+        text-align: center;
+        font-weight: 700;
+        margin-bottom: 1rem;
+        color: turquoise;
+        font-size: 2rem;
+    }
+    
+    section.freelancing p {
+        color: #fff;
+        font-size: 1rem;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-weight: 700;
+        margin-bottom: 1rem;
+    }
+    
+    section.wrk {
+        position: relative;
+        align-items: center;
+    }
+    
+    section.wrk::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(turquoise, #161616);
+        clip-path: circle(30% at right 70%);
+    }
+    
+    section.wrk::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(#161616, turquoise);
+        clip-path: circle(20% at 10% 10%);
+    }
+    
+    .working h1 {
+        font-size: 3rem;
+        font-weight: 500;
+    }
+    
+    .container2 {
+        position: relative;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        justify-content: center;
+        align-items: center;
+        max-width: 1200px;
+        flex-wrap: wrap;
+        z-index: 1;
+        margin-left: 120px;
+        margin-top: 2rem;
+        margin-left: 3rem;
+    }
+    
+    .container2 .card {
+        position: relative;
+        width: 280px;
+        height: 400px;
+        margin: 30px;
+        margin-left: 1.5rem;
+        box-shadow: 20px 20px 50px turquoise;
+        border-radius: 15px;
+        background: rgba(29, 190, 169, 0.74);
+        overflow: hidden;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-top: 1px solid rgba(255, 255, 255, 0.5);
+        border-left: 1px solid rgba(255, 255, 255, 0.5);
+        backdrop-filter: blur(10px);
+    }
+    
+    .container2 .card .content {
+        padding: 20px;
+        text-align: center;
+        transform: translateY(100px);
+        opacity: 1;
+        transition: 0.5s;
+    }
+    
+    .container2 .card:hover .content {
+        transform: translateY(0px);
+        opacity: 2;
+        transition: all 0.3s ease;
+    }
+    
+    .container2 .card .content h2 {
+        position: absolute;
+        top: -80px;
+        right: 30px;
+        font-size: 8em;
+        color: rgba(255, 255, 255, 0.192);
+        pointer-events: none;
+        margin-bottom: 0.5rem;
+    }
+    
+    .container2 .card .content h3 {
+        font-size: 1.8em;
+        color: rgb(0, 0, 0);
+        z-index: 1;
+        margin-bottom: 2rem;
+    }
+    
+    .container2 .card .content p {
+        font-size: 1rem;
+        color: #161616;
+        font-weight: 400;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    
+    .container2 .card .content a img {
+        width: 40px;
+        height: 40px;
+    }
+    
+    div.abcd p {
+        text-align: center;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-size: 1.5rem;
+        font-weight: 800;
+        align-content: center;
+        color: turquoise;
+        margin-right: 7rem;
+    }
+    
+    section.contact {
+        align-items: center;
+        justify-content: center;
+        margin-left: 6rem;
+        margin-right: 6rem;
+        background: #444444;
+        margin-top: 2rem;
+        margin-bottom: 1rem;
+    }
+    
+    section.contact .input-wrap {
+        display: flex;
+        flex-direction: column;
+        margin-block-end: 1rem;
+        margin-top: 0.1rem;
+        margin-left: 2rem;
+        margin-right: 2rem;
+    }
+    
+    section.contact .input-wrap label {
+        margin-bottom: 1rem;
+    }
+    
+    section.contact .input-wrap #yname {
+        margin-block-end: 1rem;
+        width: 100%;
+    }
+    
+    section.contact .input-wrap #email {
+        margin-block-end: 1rem;
+        width: 100%;
+    }
+    
+    section.contact .input-wrap-2 {
+        display: flex;
+        flex-direction: column;
+        margin-block-end: 1rem;
+    }
+    
+    section.contact .input-wrap-2 label {
+        align-items: center;
+        margin-left: 2rem;
+        margin-bottom: 1rem;
+    }
+    
+    section.contact .input-wrap-2 #massage {
+        align-items: center;
+        margin-block-end: 1rem;
+        margin-left: 2rem;
+        margin-right: 2rem;
+    }
+    
+    section.contact input {
+        padding: 0.5rem;
+        background: #fff;
+    }
+    
+    section.contact .input-wrap-2 #text {
+        margin-left: 2rem;
+        margin-right: 2rem;
+        border: 1px solid #161616;
+        border-style: ridge;
+        border-bottom: turquoise;
+        padding: 0.5rem 0.5rem;
+        font-size: 1rem;
+        font-weight: 500;
+    }
+    
+    form button {
+        align-items: center;
+        margin-left: 27rem;
+    }
+    
+    section.footer {
+        background: #161616;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+    }
+    
+    div .logo img {
+        margin-bottom: 0.5rem;
+    }
+    
+    div.foot p {
+        font-size: 1rem;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-weight: 400;
+        color: turquoise;
+        margin-bottom: 1rem;
+    }
+    
+    section.contact.card-wrapper {
+        display: grid;
+        grid-template-columns: 400px;
+    }
+    
+    .main-wrapper {
+        position: relative;
+    }
+    
+    .hamberger {
+        position: absolute;
+        top: 40px;
+        right: 40px;
+        z-index: 11;
+        background: none;
+        border: none;
+        outline: none;
+        cursor: pointer;
+    }
+    
+    .hamberger img {
+        width: 30px;
+    }
+    
+    .mobile-nav {
+        position: fixed;
+        top: 0;
+        z-index: 1001;
+        background: #898989;
+        width: 100%;
+        height: 100%;
+        padding: 2rem;
+        padding-top: 5rem;
+        transform: translateX(-100%);
+        transition: all 0.5s ease-in-out;
+        background: turquoise;
+    }
+    
+    .open {
+        transform: translateX(0);
+    }
+    
+    .times {
+        position: fixed;
+        top: 30px;
+        right: 30px;
+        border: none;
+        background: none;
+        outline: none;
+        cursor: pointer;
+    }
+    
+    .times img {
+        width: 30px;
+    }
+    
+    .mobile-nav ul {
+        list-style-type: none;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        margin-right: 25%;
+        margin-left: 25%;
+        background: #070606;
+        text-align: center;
+    }
+    
+    .mobile-nav ul li a {
+        color: turquoise;
+        text-decoration: none;
+        font-size: 2rem;
+        padding-inline-end: 2rem;
+    }
+    
+    .mobile-nav ul li a:hover {
+        color: #898989;
+        transform: rotate3d(21deg);
+    }
+    
+    @media (max-width:1024px) {
+        header #main-nav {
+            display: none;
+        }
+        div.left img {
+            width: 360px;
+        }
+        div.right {
+            width: 10%;
+            height: 10%;
+            margin-right: 0;
+            margin-left: 10rem;
+        }
+        .hero .right h4 {
+            font-size: 2rem;
+            color: turquoise;
+            margin-bottom: 0.5rem;
+            margin-top: 3rem;
+            margin-right: 6rem;
+        }
+        .hero .right h2 {
+            font-size: 3rem;
+            font-weight: 50;
+            line-height: 1;
+            margin-bottom: 2rem;
+        }
+        .hero {
+            padding-top: 10rem;
+        }
+        header {
+            clip-path: polygon(0 0, 100% 0, 100% 100%, 27% 89%, 0 100%);
+        }
+        .container2 {
+            position: relative;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            justify-content: center;
+            align-items: center;
+            max-width: 1200px;
+            flex-wrap: wrap;
+            z-index: 1;
+            margin-left: 3rem;
+            margin-top: 2rem;
+            margin-right: 3rem;
+        }
+        div.xxx img {
+            width: 360px;
+        }
+        div.yyy {
+            margin-left: 1rem;
+        }
+        div.card-wrapper {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-column-gap: 7rem;
+            grid-row-gap: 8rem;
+            margin-bottom: 4rem;
+        }
+    }
+    
+    @media (max-width:576px) {
+        .container {
+            max-width: 800px;
+            padding: 0 15px;
+            margin: 0 auto;
+        }
+        div.left img {
+            width: 100px;
+        }
+        .hero .right h4 {
+            font-size: 1rem;
+            color: turquoise;
+            margin-bottom: 0.5rem;
+            margin-top: 3rem;
+            margin-right: 10rem;
+        }
+        .hero .right h2 {
+            font-size: 1.5rem;
+            font-weight: 50;
+            line-height: 1;
+            margin-bottom: 1rem;
+        }
+        header {
+            clip-path: polygon(0 0, 100% 0, 100% 100%, 27% 89%, 0 100%);
+        }
+        .container2 {
+            position: relative;
+            display: grid;
+            grid-template-columns: 1fr;
+            justify-content: center;
+            align-items: center;
+            max-width: 1200px;
+            flex-wrap: wrap;
+            z-index: 1;
+            margin-left: 3rem;
+            margin-top: 2rem;
+            margin-right: 3rem;
+        }
+    }
